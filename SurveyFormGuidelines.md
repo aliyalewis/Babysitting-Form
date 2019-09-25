@@ -2,7 +2,7 @@ User Story #1: I can see a title with id="title"in H1 sized text.
 
 User Story #2: I can see a short explanation with id="description"in P sized text.
 
-User Story #3: I can see a formwith id="survey-form".
+User Story #3: I can see a form with id="survey-form".
 
 User Story #4: Inside the form element, I am required to enter my name in a field with id="name".
 
@@ -22,9 +22,9 @@ User Story #11: For the name, email, and number input fields, I can see placehol
 
 User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".
 
-User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the nameattribute.
+User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.
 
-User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a valueattribute.
+User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a valu eattribute.
 
 User Story #15: Inside the form element, I am presented with a textareaat the end for additional comments.
 

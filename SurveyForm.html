@@ -1,4 +1,29 @@
 <!DOCTYPE html>
+<style>
+    html {
+        background-color: cadetblue;
+    }
+    #title {
+        text-align: center;
+    }
+
+    #description {
+        text-align: center;
+    }
+
+    #survey-form {
+        background-color: white;
+        text-align: center;
+        margin-left: 20em;
+        margin-right: 20em;
+    }
+
+    #dropdown {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+</style>
+
 <html>
     <h1 id="title">Babysitting Profile</h1>
     <p id="description">Fill out your profile so we can match you with the right family for you!</p>
@@ -8,7 +33,10 @@
         <label for="email" id="email-label">Email:</label>
         <input id="email" required type="email" name="email" placeholder="Enter email here">
         <label for="number" id="number-label">Age:</label>
-        <input id="number" required type="number" min="18" max="70" name="number" placeholder="Age?" >
+        <input id="number" required type="number" min="18" max="70" name="number">
+        <br>
+        <br>
+        <div>Which age do you prefer to babysit?</div>
         <select id="dropdown">
             <option value="Newborn">Newborn</option>
             <option value="Infant">Infant</option>
