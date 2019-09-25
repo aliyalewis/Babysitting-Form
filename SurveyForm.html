@@ -1,42 +1,70 @@
 <!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+
+
 <style>
     html {
         background-color: cadetblue;
     }
     #title {
         text-align: center;
+        font-family: 'Playfair Display', serif;
     }
 
     #description {
         text-align: center;
+        font-family: 'Playfair Display', serif;
     }
 
     #survey-form {
         background-color: white;
-        text-align: center;
         margin-left: 20em;
         margin-right: 20em;
+        font-family: 'Playfair Display', serif;
+    }
+
+    #name {
+        align-content: center;
+        margin-bottom: 10px;
+    }
+
+    #email {
+        margin-bottom: 10px;
     }
 
     #dropdown {
         margin-top: 10px;
         margin-bottom: 10px;
     }
+
+    #contact-div {
+        margin-bottom: 10px;
+    }
+
+    #comments {
+        font-family: 'Playfair Display', serif;
+    }
+
+    #submit {
+        font-family: 'Playfair Display', serif;
+    }
 </style>
 
 <html>
-    <h1 id="title">Babysitting Profile</h1>
+    <h1 id="title">Babysitting Application</h1>
     <p id="description">Fill out your profile so we can match you with the right family for you!</p>
     <form id="survey-form">
-        <label for="name" id="name-label">Name:</label>
+        <label for="name" id="name-label">*Name:</label>
         <input id="name" required type="text" name="name" placeholder="Enter name here">
-        <label for="email" id="email-label">Email:</label>
+        <br>
+        <label for="email" id="email-label">*Email:</label>
         <input id="email" required type="email" name="email" placeholder="Enter email here">
-        <label for="number" id="number-label">Age:</label>
+        <br>
+        <label for="number" id="number-label">*Age:</label>
         <input id="number" required type="number" min="18" max="70" name="number">
         <br>
         <br>
-        <div>Which age do you prefer to babysit?</div>
+        <div>*Which age do you prefer to babysit?</div>
         <select id="dropdown">
             <option value="Newborn">Newborn</option>
             <option value="Infant">Infant</option>
@@ -45,7 +73,9 @@
             <option value="Newborn">Elementary</option>
             <option value="Newborn">Preteen</option>
         </select>
-        <div>How would you like to be contacted?</div>
+        <br>
+        <br>
+        <div id="contact-div">How would you like to be contacted?</div>
         <label for="cellphone">
             <input id="cellphone" type="radio" value="cellphone" name="contact">
             Cellphone
@@ -62,7 +92,9 @@
             <input id="text" type="radio" value="text" name="contact">
             Text
         </label>
-        <div>When are you available?</div>
+        <br>
+        <br>
+        <div>*When are you available?</div>
         <label for="morning">
             <input id="morning" type="checkbox" value="morning" name="availabilty">
             Morning
@@ -79,7 +111,15 @@
             <input id="night" type="checkbox" value="night" name="availabilty">
             Night
         </label>
-        <textarea>Additonal Comments?</textarea>
+        <label for="anytime">
+            <input id="anytime" type="checkbox" value="anytime" name="availabilty">
+            Anytime
+        </label>
+        <br>
+        <br>
+        <div>Anything else you'd like to tell us?</div>
+        <textarea id="comments">Enter comment here...</textarea>
+        <br>
         <button id="submit" type="submit">Submit Profile Info</button>
     </form>
 </html>
