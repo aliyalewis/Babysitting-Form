@@ -4,10 +4,35 @@
     <p id="description">Fill out your profile so we can match you with the right family for you!</p>
     <form id="survey-form">
         <label for="name" id="name-label">Name:</label>
-            <input id="name" required type="text" name="name" placeholder="Enter name here">
-         <label for="email" id="email-label">Email:</label>
-            <input id="email" required type="email" name="email" placeholder="Enter email here">
+        <input id="name" required type="text" name="name" placeholder="Enter name here">
+        <label for="email" id="email-label">Email:</label>
+        <input id="email" required type="email" name="email" placeholder="Enter email here">
         <label for="number" id="number-label">Age:</label>
-            <input id="number" required type="number" min="18" max="70" name="number" placeholder="What is your age?" >
-     </form>
+        <input id="number" required type="number" min="18" max="70" name="number" placeholder="What is your age?" >
+        <label for="dropdown" id="dropdown=label">Which age group do you prefer??</label>
+        <select id="dropdown">
+            <option value="Newborn">Newborn</option>
+            <option value="Infant">Infant</option>
+            <option value="Toddler">Toddler</option>
+            <option value="Preschool">Preschool</option>
+            <option value="Newborn">Elementary</option>
+            <option value="Newborn">Preteen</option>
+        </select>
+        <label for="morning">
+            <input id="morning" type="checkbox" name="availabilty">
+            Morning
+        </label>
+        <label for="afternoon">
+            <input id="afternoon" type="checkbox" name="availabilty">
+            Afternoon
+        </label>
+        <label for="evening">
+            <input id="evening" type="checkbox" name="availabilty">
+            Evening
+        </label>
+        <label for="night">
+            <input id="night" type="checkbox" name="availabilty">
+            Night
+        </label>
+    </form>
 </html>
